@@ -2,6 +2,8 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
+
+  
   const [btnNameReact, setbtnNameReact] = useState("Login");
   return (
     <div className="navbar-container">
@@ -23,8 +25,10 @@ const Navbar = () => {
           <li>
             <Link to="/contactus">Contact us</Link>
           </li>
-          <li>Order</li>
-          <li>Cart</li>
+          <li>
+            <Link to="/ordernow">Order</Link>
+          </li>
+          <li>Add to Cart</li>
           <button
             className="login-btn"
             onClick={() => {
